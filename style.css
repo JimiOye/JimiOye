@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header & Nav */
+header {
+    position: fixed; /* Makes the nav bar fixed */
+    top: 0; /* Ensures it stays at the top of the viewport */
+    left: 0; /* Aligns it to the left edge */
+    width: 100%; /* Spans the full width of the page */
+    background-color: #333; /* Keeps the background color consistent */
+     background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle drop shadow */
+    z-index: 1000; /* Ensures it appears above other elements */
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: #043755;
+    color: white;
+    padding: 160px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;  
+}
+
+.hero p {
+    font-size: 1.5rem;
+    padding-top: 2%;
+}
+
+/* About Me Section */
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-break: 1.2rem;
+    max-width: 800px; /* Sets a maximum width for the write-up */
+    margin: 0 auto 24px;
+    line-height: 1.6rem;
+}
+
+.about a {
+    display: inline-block;
+    background-color: #043755;
+    padding: 12px 44px;
+    color: white;
+    border-radius: 24px;
+}
+
+/* Project Section */
+.projects {
+    padding: 50px 120px;
+    text-align: center;
+    align-self: center;
+    
+}
+
+.project-card {
+    background-color: #e0e0e0;
+    padding: 50px;
+    border-radius: 32px;
+    transition: background-color 0.3s ease;
+    margin: 32px auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.project-card h3 {
+    margin-bottom: 12px; /* Space between project title and description */
+}
+
+.project-card p {
+    margin-top: 0; /* Optional: ensures text starts right after the title */
+    font-weight:600px
+}
+.project-card:hover {
+    background-color: #043755;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background-color: #043755;
+    color: white;
+    padding: 12px 44px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #043755;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 18px;
+}
